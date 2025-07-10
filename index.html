@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Matching Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <header>
+      <h1>Memory Match</h1>
+      <div class="controls">
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty">
+          <option value="6">Easy</option>
+          <option value="8" selected>Medium</option>
+          <option value="12">Hard</option>
+        </select>
+        <button id="card-type-toggle" title="Switch Card Type">🖼️ Images</button>
+        <span class="stats">
+          <span id="moves">Moves: 0</span>
+          <span id="timer">Time: 00:00</span>
+        </span>
+        <button id="theme-toggle" title="Switch Theme">🌙</button>
+      </div>
+    </header>
+    <div class="board" id="board"></div>
+    <button id="restart">Restart</button>
+  </div>
+  <!-- Win Modal -->
+  <div id="win-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>🎉 You Won!</h2>
+      <p id="win-stats"></p>
+      <button id="play-again">Play Again</button>
+      <div id="leaderboard"></div>
+    </div>
+  </div>
+  <!-- Audio -->
+  <audio id="audio-flip" src="flip.mp3" preload="auto"></audio>
+  <audio id="audio-match" src="match.mp3" preload="auto"></audio>
+  <audio id="audio-win" src="win.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html> 
