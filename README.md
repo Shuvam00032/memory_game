@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Memory Matching Game
 
 A beautiful, interactive memory matching (flip card) game built with HTML, CSS, and JavaScript.
@@ -43,3 +44,6 @@ A beautiful, interactive memory matching (flip card) game built with HTML, CSS, 
 
 ---
 Enjoy your game! If you have any issues or want to add features, feel free to ask for help. 
+=======
+# memory_game
+>>>>>>> e097dbc4e7ef1f738f6ff2709dfb450155138d9f
